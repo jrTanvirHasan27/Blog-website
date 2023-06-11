@@ -5,54 +5,7 @@
 @endsection
 
 @section('content')
-    <!-- Page header with logo and tagline-->
-    <header class="py-5 border-bottom mb-4">
-        <div class="slider-area">
-            <!-- Slider -->
-            <div class="block-slider block-slider4">
-                <ul class="" id="bxslider-home4">
-                    <li>
-                        <img src="{{ asset('/') }}Frontend/Slider/img/h4-slide.png" alt="Slide">
-                        <div class="caption-group">
-                            <h2 class="caption title">
-                                iPhone <span class="primary">6 <strong>Plus</strong></span>
-                            </h2>
-                            <h4 class="caption subtitle">Dual SIM</h4>
-                            <a class="caption button-radius" href="#"><span class="icon"></span>Shop now</a>
-                        </div>
-                    </li>
-                    <li><img src="{{ asset('/') }}Frontend/Slider/img/h4-slide2.png" alt="Slide">
-                        <div class="caption-group">
-                            <h2 class="caption title">
-                                by one, get one <span class="primary">50% <strong>off</strong></span>
-                            </h2>
-                            <h4 class="caption subtitle">school supplies & backpacks.*</h4>
-                            <a class="caption button-radius" href="#"><span class="icon"></span>Shop now</a>
-                        </div>
-                    </li>
-                    <li><img src="{{ asset('/') }}Frontend/Slider/img/h4-slide3.png" alt="Slide">
-                        <div class="caption-group">
-                            <h2 class="caption title">
-                                Apple <span class="primary">Store <strong>Ipod</strong></span>
-                            </h2>
-                            <h4 class="caption subtitle">Select Item</h4>
-                            <a class="caption button-radius" href="#"><span class="icon"></span>Shop now</a>
-                        </div>
-                    </li>
-                    <li><img src="{{ asset('/') }}Frontend/Slider/img/h4-slide4.png" alt="Slide">
-                        <div class="caption-group">
-                            <h2 class="caption title">
-                                Apple <span class="primary">Store <strong>Ipod</strong></span>
-                            </h2>
-                            <h4 class="caption subtitle">& Phone</h4>
-                            <a class="caption button-radius" href="#"><span class="icon"></span>Shop now</a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <!-- ./Slider -->
-        </div> <!-- End slider area -->
-    </header>
+
     <!-- Page content-->
     <div class="container">
         <div class="row">
@@ -99,14 +52,6 @@
                     <hr class="my-0" />
                     <ul class="pagination justify-content-center my-4">
                         {{ $blogs->links() }}
-                        {{-- <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1"
-                                aria-disabled="true">Newer</a></li>
-                        <li class="page-item active" aria-current="page"><a class="page-link" href="#!">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#!">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#!">3</a></li>
-                        <li class="page-item disabled"><a class="page-link" href="#!">...</a></li>
-                        <li class="page-item"><a class="page-link" href="#!">15</a></li>
-                        <li class="page-item"><a class="page-link" href="#!">Older</a></li> --}}
                     </ul>
                 </nav>
             </div>
@@ -143,7 +88,7 @@
                     @foreach ($categories as $category)
                         <div @if ($loop->iteration == 1) class="card tab-pane fade show active" @else class="card tab-pane fade show" @endif
                             id="pills-{{ $category->id }}" role="tabpanel"
-                            aria-labelledby="pills-{{ $category->id }}-tab" tabindex="0" style="width: 26rem;">
+                            aria-labelledby="pills-{{ $category->id }}-tab" tabindex="0" style="width: 353px;">
                             <img src="{{ asset('/') }}category-image/{{ $category->image }}" class="card-img-top"
                                 alt="...">
                             <div class="card-body">

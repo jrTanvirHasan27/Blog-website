@@ -25,6 +25,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [HomeController::class, 'index'])->name('blog.home');
 Route::get('/blogpost/read/{blogpost_id}', [HomeController::class, 'readBlog'])->name('blog.read');
 Route::get('/category/explore/{category_id}', [HomeController::class, 'exploreCategory'])->name('category.explore');
+Route::get('/about-us', [HomeController::class, 'aboutUs'])->name('about-us');
+Route::get('/contact-us', [HomeController::class, 'contactUs'])->name('contact-us');
 
 Route::middleware([
     'auth:sanctum',
